@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+  ==========================================================================
+  JAYSON BASTO — PORTFOLIO (v4, light tech theme)
+  QUICK EDITING GUIDE
+  1. Search this file for "EDIT:" to find everything you need to personalize.
+  2. Put your images in  assets/images/  using the file names in the
+     <img src="..."> tags (or change the names here to match your files).
+     Until an image exists, a labeled placeholder box is shown instead.
+  3. Videos: Vimeo IDs are in the data-vimeo attributes (Work section).
+  4. Contact form: replace YOUR_FORM_ID (see the Contact section).
+  5. Keep style.css in the same folder as this file.
+  ==========================================================================
+-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Adds a "js" class so CSS knows JavaScript is available (progressive enhancement) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- EDIT: page title and description (what Google and social previews show) -->
+  <title>Jayson Basto | Administrative Support, Expert Witness Search &amp; Video Editing</title>
+  <meta name="description"
+    content="Jayson Basto is a remote virtual assistant, expert witness search assistant, and short-form video editor, Microsoft Certified AI-103, with remote work experience since 2020.">
+  <meta name="theme-color" content="#F5F8FF">
+
+  <!-- EDIT: social sharing preview. Add a 1200x630 image at assets/images/share.jpg and your live site URL -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jayson Basto | Administrative Support &amp; Video Editing">
+  <meta property="og:description"
+    content="Dependable admin support, expert witness search, and short-form video editing.">
+  <meta property="og:image" content="assets/images/share.jpg">
+
+  <!-- Simple "JB" favicon (no file needed) -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F6BFF'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='%23FFC93C'%3EJB%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts: Plus Jakarta Sans (headings and body), JetBrains Mono (small labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+
+  <!-- Icon sprite: each icon is drawn once here and reused with <use href="#i-name"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+      </symbol>
+      <symbol id="i-film" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="M7 4v16M17 4v16M2 12h20M2 8h5M2 16h5M17 8h5M17 16h5" />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.3-4.3" />
+      </symbol>
+      <symbol id="i-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+        <path d="M3 12a9 3 0 0 0 18 0" />
+      </symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24">
+        <rect x="4" y="8" width="16" height="12" rx="3" />
+        <path d="M12 8V4" />
+        <circle cx="12" cy="3" r="1" />
+        <path d="M9 14h.01M15 14h.01" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path d="M22 10 12 5 2 10l10 5 10-5z" />
+        <path d="M6 12v5c3 2 9 2 12 0v-5" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m22 7-10 6L2 7" />
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <rect x="2" y="7" width="20" height="14" rx="2" />
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 24 24">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="M6 3l14 9-14 9z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+
+  <!-- ==========================================================================
+     HEADER + NAVIGATION
+     ========================================================================== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">JB</span>JAYSON BASTO</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="nav" id="site-nav" data-open="false" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Services</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a class="nav__cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <!-- ==========================================================================
+     HERO
+     Text on the left, ringed portrait on the right.
+     ========================================================================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"><span class="orb orb--1" data-parallax="0.18"></span><span
+          class="orb orb--2" data-parallax="-0.1"></span></div>
+      <div class="wrap hero__grid">
+
+        <div class="hero__copy">
+          <h1 id="hero-title"><span class="grad">Virtual Assistant</span> Tech‑Savvy Support AI‑103 Trained</h1>
+
+          <!-- EDIT: your one-sentence promise -->
+          <p class="hero__lead">I’m a versatile Virtual Assistant who schedules, organizes, researches, and edits with
+            precision so no detail is overlooked.</p>
+          <p>With over five years of remote work experience and a background as a Head Teacher, I bring patience, strong
+            communication skills, and dependable project execution to every task. In addition, I have completed
+            self-directed training in Microsoft Azure AI and have thoroughly studied the<b> Microsoft AI-103 (Azure AI
+              App and Agent Developer Associate)</b> curriculum. This enables me to leverage AI-powered tools and
+            automation solutions to streamline workflows, improve productivity, and support clients more effectively.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">See my work</a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+
+          <!-- Credibility facts pulled from your resume -->
+          <dl class="facts">
+            <div>
+              <dt>Remote since 2020</dt>
+              <dd>Working with teams and students abroad</dd>
+            </div>
+            <div>
+              <dt>Former Head Teacher</dt>
+              <dd>First Future Education, 2018 to 2019</dd>
+            </div>
+            <div>
+              <dt>Freelancing</dt>
+              <dd>Customer service, research, and video editing</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero__media" data-parallax="0.06">
+          <!-- EDIT: profile photo. Save as assets/images/profile.jpg (square-ish crop works best) -->
+          <div class="ph" data-label="Add your profile photo: assets/images/profile.jpg">
+            <img src="assets/images/profile.jpg" alt="Portrait of Jayson Basto" width="640" height="640">
+          </div>
+          <span class="ring ring--blue" aria-hidden="true"></span>
+          <span class="ring ring--yellow" aria-hidden="true"></span>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+     ABOUT: training and credentials
+     ========================================================================== -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="credentials" id="credentials">
+          <h3 id="about-title">Training and credentials</h3>
+          <ul class="credentials__grid">
+
+            <!-- EDIT: add photos or scans of your certificates (blur any ID numbers).
+             File names: cert-admin-assistance.jpg, cert-power-bi.jpg, cert-tkt.jpg, diploma-pup.jpg, TEFL.jpg -->
+             <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-admin-assistance.jpg">
+                  <img src="assets/images/work/Z3.png"
+                    alt="Certificate: Career Essentials in Administrative Assistance" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Building Intermediate Zaps</strong>
+                  <span>Zapier Academy</span>
+                </figcaption>
+              </figure>
+            </li>
+             <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-admin-assistance.jpg">
+                  <img src="assets/images/work/Z2.png"
+                    alt="Certificate: Career Essentials in Administrative Assistance" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Building Basic Zaps</strong>
+                  <span>Zapier Academy</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-admin-assistance.jpg">
+                  <img src="assets/images/work/Z1.png"
+                    alt="Certificate: Career Essentials in Administrative Assistance" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Jumpstart (Foundations)</strong>
+                  <span>Zapier Academy</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-admin-assistance.jpg">
+                  <img src="assets/images/work/cert-admin-assistance.jpg"
+                    alt="Certificate: Career Essentials in Administrative Assistance" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Career Essentials in Administrative Assistance</strong>
+                  <span>Microsoft and LinkedIn</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-power-bi.jpg">
+                  <img src="assets/images/work/cert-power-bi.jpg" alt="Certificate: Power BI Beginner to Pro Workshop"
+                    loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Power BI Beginner to Pro Workshop</strong>
+                  <span>Pragmatic Works</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Certificate image: assets/images/cert-tkt.jpg">
+                  <img src="assets/images/work/cert-tkt.jpg" alt="Certificate: TKT, Cambridge English" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>Learning Data Analytics: 1 Foundations</strong>
+                  <span>Microsoft and LinkedIn</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="Graduation or diploma photo: assets/images/diploma-pup.jpg">
+                  <img src="assets/images/work/diploma-pup.png"
+                    alt="Diploma: AB English, Polytechnic University of the Philippines" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>AB English</strong>
+                  <span>Polytechnic University of the Philippines - Manila</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="credential">
+                <div class="ph ph--cert" data-label="TEFL certificate: assets/images/TEFL.jpg">
+                  <img src="assets/images/work/TEFL.jpg" alt="TEFL certificate from TeacherRecord.com" loading="lazy">
+                </div>
+                <figcaption>
+                  <strong>TEFL Certificate</strong>
+                  <span>TeacherRecord.com</span>
+                </figcaption>
+              </figure>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+     SKILLS / SERVICES
+     To add a service: copy one <li class="skill"> block and change the text.
+     Icon names available: i-file, i-film, i-search, i-database, i-bot, i-cap
+     ========================================================================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+
+        <div class="section__head">
+          <p class="eyebrow">// Services</p>
+          <h2 id="skills-title">What I can take off your plate</h2>
+          <p class="section__intro">Hire me for one of these or combine them. Each comes with the tools I use to deliver
+            it.</p>
+        </div>
+
+        <ul class="skills">
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-file" />
+              </svg></span>
+            <div>
+              <h3>Administrative support</h3>
+              <p>Scheduling, appointment management, organized records, and clear reports that stay accurate and up to
+                date.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">Microsoft Excel</li>
+              <li class="chip">Word</li>
+              <li class="chip">PowerPoint</li>
+              <li class="chip">Scheduling</li>
+              <li class="chip">Record keeping</li>
+              <li class="chip">Email Management</li>
+              <li class="chip">Data Entry</li>
+              <li class="chip">Document Formatting</li>
+            </ul>
+          </li>
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-film" />
+              </svg></span>
+            <div>
+              <h3>Short-form video editing</h3>
+              <p>Edits for YouTube Shorts and Instagram that match your brand's message, with effects and sound that
+                hold attention.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">CapCut</li>
+              <li class="chip">Motion graphics</li>
+              <li class="chip">Text animation</li>
+              <li class="chip">Sound design</li>
+              <li class="chip">Video Transitions</li>
+              <li class="chip">Subtitle Creation</li>
+              <li class="chip">Social Media Content</li>
+            </ul>
+          </li>
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-search" />
+              </svg></span>
+            <div>
+              <h3>Expert witness search</h3>
+              <p>Finding the right expert for each case, coordinating appointments, and tracking every expert's
+                specialty and case involvement.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">Expert sourcing</li>
+              <li class="chip">Case matching</li>
+              <li class="chip">Client coordination</li>
+              <li class="chip">Internet Research</li>
+              <li class="chip">Case Tracking</li>
+            </ul>
+          </li>
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-database" />
+              </svg></span>
+            <div>
+              <h3>Data cleaning and analysis</h3>
+              <p>Turning messy spreadsheets and raw data into clean, usable tables, plus analysis of market and trading
+                data.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">Python (basic)</li>
+              <li class="chip">Data cleaning</li>
+              <li class="chip">Preprocessing</li>
+              <li class="chip">Power BI</li>
+              <li class="chip">Forex analysis</li>
+              <li class="chip">Algorithmic trading concepts
+              <li>
+              <li class="chip">Dashboard Creation</li>
+              <li class="chip">Reporting & Insights</li>
+            </ul>
+          </li>
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-bot" />
+              </svg></span>
+            <div>
+              <h3>AI-assisted workflows</h3>
+              <p>Faster drafts, research, and prototypes using today's AI tools, with prompts written to get dependable
+                results.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">ChatGPT</li>
+              <li class="chip">Gemini</li>
+              <li class="chip">Perplexity</li>
+              <li class="chip">Claude</li>
+              <li class="chip">Microsoft Copilot</li>
+              <li class="chip">Meta prompting</li>
+              <li class="chip">Vibe coding</li>
+              <li class="chip">VS Code</li>
+              <li class="chip">Workflow Automation</li>
+              <li class="chip">AI Research</li>
+            </ul>
+          </li>
+
+          <li class="skill">
+            <span class="skill__icon"><svg class="icon" aria-hidden="true">
+                <use href="#i-cap" />
+              </svg></span>
+            <div>
+              <h3>English and IELTS coaching</h3>
+              <p>Speaking assessments, progress reports, and lesson plans that follow current language-proficiency
+                standards.</p>
+            </div>
+            <ul class="chips">
+              <li class="chip">IELTS speaking</li>
+              <li class="chip">Lesson planning</li>
+              <li class="chip">Progress reports</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+     SELECTED WORK
+     LAYER 1: Photos. LAYER 2: Videos, four per row (Reels size).
+     LAYER 3: Slideshow of project screenshots.
+
+     HOW TO ADD A PHOTO
+       1. Save the picture in  assets/images/work/  (e.g. work-05.jpg)
+       2. Copy one <li class="gallery__item"> block, paste it after the last
+          one, then change the file name, alt text, title and description.
+
+     HOW TO ADD A VIDEO (hosted on Vimeo)
+       1. Upload the video to Vimeo and wait until it finishes processing.
+       2. Open it on Vimeo. The address looks like  vimeo.com/123456789
+          Copy only the number and put it in  data-vimeo="123456789"
+       3. If the video is Unlisted, the address has a second code:
+          vimeo.com/123456789/a1b2c3d4e5  ->  data-vimeo="123456789"
+          and data-vimeo-hash="a1b2c3d4e5"
+       4. To add more, copy one <li class="reel"> block.
+       Optional cover picture: put its path in data-thumb="...". Otherwise
+       Vimeo's own thumbnail is used.
+     ========================================================================== -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+
+        <div class="section__head">
+          <p class="eyebrow">// Portfolio</p>
+          <h2 id="projects-title">Selected work</h2>
+          <p class="section__intro">Examples of the research, data, and video work I deliver.</p>
+        </div>
+
+        <!-- ======================= LAYER 1: PHOTOS ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">01</span>
+            <h3 class="layer__title">Adaptive Multi-Client RAG Support Agent</h3>
+          </header>
+
+          <p class="layer__desc">
+            An adaptive support agent for small businesses. Each business is a single YAML file.
+            Customers write on Messenger, Instagram, WhatsApp or Telegram and get answers drawn
+            only from that business's own documents. Staff handle several customers at once on a
+            dashboard that writes every case to Excel. <b>WHAT IT DOES:</b> Answers from the client's files only,
+            Replies on the channels customers use, Uses outside apps safely, A desk for staff.
+          </p>
+
+          <ul class="gallery">
+
+            <!-- EDIT: photo 1 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/work-01.jpg">
+                  <img src="assets/images/work/work-01.jpg"
+                    alt="Support dashboard showing three customer conversations side by side" loading="lazy"
+                    draggable="false">
+                </div>
+                <figcaption>
+                  <h4>Three customers handled at once.</h4>
+                  <p>Several customer windows side by side, an editable product dropdown, automatic customer IDs, and
+                    RESOLVED / PENDING / OTHERS buttons. OTHERS asks what it is. </p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- EDIT: photo 2 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/work-02.jpg">
+                  <img src="assets/images/work/work-02.jpg" alt="Records tab reading the Excel file the agent writes"
+                    loading="lazy" draggable="false">
+                </div>
+                <figcaption>
+                  <h4>The Records tab reads the same Excel file the agent writes.</h4>
+                  <p>Empty cells stay blank. History survives restarts with no server to run. Customers are matched by
+                    ID, not name, so two people with the same name never share a past. Retention and per-customer
+                    deletion are built in.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- EDIT: photo 3 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/work-02.jpg">
+                  <img src="assets/images/work/work-03.png" alt="Records tab reading the Excel file the agent writes"
+                    loading="lazy" draggable="false">
+                </div>
+                <figcaption>
+                  <h4>The RAG process</h4>
+                  <p>The knowledge files are read, split into labeled pieces, turned into numbers by the embedding model, and stored in ChromaDB or Qdrant. This indexing runs once, and after that only new or changed files are re-processed, because each file’s hash is remembered. When a customer asks something, the agent searches by meaning and by exact words, merges the two rankings, and optionally re-ranks the best passages. The chat model then writes a reply from those passages only, with numbered citations. If nothing relevant is found, it says so and hands the case to a person instead of guessing.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- EDIT: photo 2 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/work-02.jpg">
+                  <img src="assets/images/work/work-04.png" alt="Records tab reading the Excel file the agent writes"
+                    loading="lazy" draggable="false">
+                </div>
+                <figcaption>
+                  <h4>Models and technology</h4>
+                  <p>Three kinds of model do the AI work. The chat model writes answers and fills the Excel row, and you pick it from a dropdown: Ollama (local), Groq, Gemini or OpenRouter. The embedding model finds passages by meaning and runs on your own computer. The optional reranker picks the best passages. Everything else is ordinary code: Python with FastAPI and Pydantic, ChromaDB or Qdrant, BM25 keyword search, SQLite memory, Excel through openpyxl, MCP, and a vanilla JavaScript dashboard. The project has 168 passing tests.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- TO ADD MORE PHOTOS: copy one <li class="gallery__item"> block and paste it here. -->
+
+          </ul>
+        </div>
+
+        <!-- ======================= LAYER 2: PHOTOS ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">02</span>
+            <h3 class="layer__title">RAG-Powered Study Game for Any Book</h3>
+          </header>
+
+          <p class="layer__desc">
+            I built Quiz Showdown to prepare for the Microsoft AI-103 exam. It is a quiz generator that writes questions
+            only from the books and files I choose, and every question cites the page or section it came from. I put my
+            study material in a knowledge folder, pick one or several books, and play the quiz in a “Who Wants to Be a
+            Millionaire”-style game. Because it isn’t hard-coded to one subject, I can drop in notes for any other exam
+            or course and it adapts. Under the hood it uses retrieval-augmented generation (RAG), reranking, adaptive
+            difficulty and strict validation, so the questions stay grounded in my sources and don’t repeat.
+          </p>
+
+          <ul class="gallery">
+
+            <!-- EDIT: photo 1 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/GAME1.jpg">
+                  <img src="assets/images/work/GAME1.jpg"
+                    alt="Support dashboard showing three customer conversations side by side" loading="lazy"
+                    draggable="false">
+                </div>
+                <figcaption>
+                  <h4>What it does</h4>
+                  <p>Indexes PDF, DOCX, TXT, MD and HTML files into a vector database.
+                    Lets you select multiple books and generates questions only from those sources.
+                    Supports 7 question types: multiple choice, true/false, fill in the blank, short answer, case study,
+                    drag and drop, and interactive lab.
+                    Adapts difficulty (easy, medium, hard) to how you are doing, and avoids repeating earlier questions.
+                    Shows the source book and citation for every answer.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- EDIT: photo 2 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/GAME2.jpg">
+                  <img src="assets/images/work/GAME2.jpg" alt="Records tab reading the Excel file the agent writes"
+                    loading="lazy" draggable="false">
+                </div>
+                <figcaption>
+                  <h4>How it works (pipeline)</h4>
+                  <p>Retrieve: a hybrid search runs per selected book, with a filter so other books can’t leak in.
+                    Rerank: a BGE reranker (bge-reranker-v2-m3) picks the best passages.
+                    Write: an LLM writes the questions. You choose the model from a dropdown: local Ollama (llama3.2:3b)
+                    or Groq (gpt-oss-20b).
+                    Check: strict JSON-schema validation, citation and grounding checks, and duplicate detection, with
+                    bounded regeneration.
+                    Play: the game dashboard hides the answers until you lock in.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+                      </ul>
+        </div>
+
+        <!-- ======================= LAYER 3: PHOTOS ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">03</span>
+            <h3 class="layer__title">Signal-only XAUUSD (gold) Analysis Dashboard Agent</h3>
+          </header>
+
+          <p class="layer__desc">
+            I built ApexQuant-XAU, an open-source XAUUSD analysis dashboard that is designed to say "NO TRADE" more than it says "trade". Data quality, macro (FRED), news freeze and spread/liquidity checks run as deterministic gates in code; an LLM (gemini-3-flash by default) only judges chart structure after every gate passes. Signal-only, read-only MT5, DST-aware time zones, MIT licensed. Educational use, not financial advice and not backtested.
+          </p>
+
+          <ul class="gallery">
+
+            <!-- EDIT: photo 1 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/GAME1.jpg">
+                  <img src="assets/images/work/G1.jpg"
+                    alt="Support dashboard showing three customer conversations side by side" loading="lazy"
+                    draggable="false">
+                </div>
+                <figcaption>
+                  <h4>Why it was built?</h4>
+                  <p>Most AI "trading signal" tools always produce a signal and let the model improvise facts. This project inverts that: it treats missing or stale data as a reason to stand aside, keeps everything verifiable in code, and uses the LLM only for the part that genuinely needs interpretation.</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- EDIT: photo 2 -->
+            <li class="gallery__item">
+              <figure class="shot">
+                <div class="ph wm" data-label="Add photo: assets/images/work/GAME2.jpg">
+                  <img src="assets/images/work/G2.jpg" alt="Records tab reading the Excel file the agent writes"
+                    loading="lazy" draggable="false">
+                </div>
+                <figcaption>
+                  <h4>Who it is for?</h4>
+                  <p>Retail and discretionary gold traders who want a disciplined pre-trade checklist; developers and students interested in LLM guardrails, fail-closed design and market-data engineering; and anyone who wants a worked example of combining APIs, time-zone-correct data handling and AI in one tool.</p>
+                </figcaption>
+              </figure>
+            </li>
+            
+
+          </ul>
+        </div>
+
+        <!-- ======================= LAYER 3: VIDEOS ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">04</span>
+            <h3 class="layer__title">Short-form video edits</h3>
+          </header>
+
+          <p class="layer__desc">
+            For this Fiverr gig, my client asked me to create knowledge videos for YouTube Shorts. I edited the videos
+            using CapCut, sourced the visuals from Pexels, and produced the voiceovers with ElevenLabs. In total, I
+            created 20 videos, but I selected a few as samples.
+          </p>
+
+          <ul class="reels">
+
+            <!-- EDIT: video 1 -->
+            <li class="reel">
+              <div class="reel__frame wm" data-vimeo="1239256216" data-vimeo-hash="" data-thumb=""
+                data-label="Loading video" role="button" tabindex="0" aria-label="Play video: Planet Hopping">
+                <span class="reel__play" aria-hidden="true"><svg class="icon icon--fill">
+                    <use href="#i-play" />
+                  </svg></span>
+              </div>
+              <p class="reel__caption">ANIMAL FUN FACTS</p>
+            </li>
+
+            <!-- EDIT: video 2 -->
+            <li class="reel">
+              <div class="reel__frame wm" data-vimeo="1237209627" data-vimeo-hash="" data-thumb=""
+                data-label="Loading video" role="button" tabindex="0"
+                aria-label="Play video: Does blue light affect your eyes?">
+                <span class="reel__play" aria-hidden="true"><svg class="icon icon--fill">
+                    <use href="#i-play" />
+                  </svg></span>
+              </div>
+              <p class="reel__caption">DOES BLUE LIGHT AFFECT OUR EYES?</p>
+            </li>
+
+            <!-- EDIT: video 3 -->
+            <li class="reel">
+              <div class="reel__frame wm" data-vimeo="1239257055" data-vimeo-hash="" data-thumb=""
+                data-label="Loading video" role="button" tabindex="0" aria-label="Play video: Most expensive stones">
+                <span class="reel__play" aria-hidden="true"><svg class="icon icon--fill">
+                    <use href="#i-play" />
+                  </svg></span>
+              </div>
+              <p class="reel__caption">WHAT IS S.O.S?</p>
+            </li>
+
+            <!-- EDIT: video 4 -->
+            <li class="reel">
+              <div class="reel__frame wm" data-vimeo="1239257403" data-vimeo-hash="" data-thumb=""
+                data-label="Loading video" role="button" tabindex="0" aria-label="Play video: Blood type">
+                <span class="reel__play" aria-hidden="true"><svg class="icon icon--fill">
+                    <use href="#i-play" />
+                  </svg></span>
+              </div>
+              <p class="reel__caption">BLOOD DONATION</p>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <!-- ======================= LAYER 1: SLIDESHOW ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">05</span>
+            <h3 class="layer__title">Custom Educational Games Designed in PowerPoint</h3>
+          </header>
+
+          <ul class="gallery">
+            <li class="gallery__item shot--wide">
+              <figure class="shot">
+
+                <div class="mini-slider wm" aria-label="Project 1 screenshots">
+                  <div class="mini-slider__track">
+                    <div class="mini-slide is-active"><img src="assets/images/work/L1.gif"
+                        alt="Customer support dashboard" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L2.gif" alt="Multiple customer conversations"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L3.gif" alt="Support case management, screen 3"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L4.gif" alt="Support case management, screen 4"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L5.gif" alt="Support case management, screen 5"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L6.gif" alt="Support case management, screen 6"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L7.jpg" alt="Support case management, screen 7"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L8.jpg" alt="Support case management, screen 8"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L9.jpg" alt="Support case management, screen 9"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L10.jpg"
+                        alt="Support case management, screen 10" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L11.jpg"
+                        alt="Support case management, screen 11" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L12.jpg"
+                        alt="Support case management, screen 12" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L13.jpg"
+                        alt="Support case management, screen 12" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/L14.jpg"
+                        alt="Support case management, screen 12" loading="lazy"></div>
+                  </div>
+
+                  <button class="mini-arrow mini-prev" type="button" aria-label="Previous screenshot">&#10094;</button>
+                  <button class="mini-arrow mini-next" type="button" aria-label="Next screenshot">&#10095;</button>
+                  <span class="mini-count" aria-live="polite"></span>
+                </div>
+
+                <figcaption>
+                  <h4>Student Engagement Projects</h4>
+                  <p>I designed and developed interactive learning games to increase student engagement, reinforce
+                    lessons, and make learning more enjoyable. All games were created manually in PowerPoint using
+                    custom animations, triggers, and game mechanics..</p>
+                </figcaption>
+
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+                <!-- ======================= LAYER 2: SLIDESHOW ======================= -->
+        <div class="layer">
+          <header class="layer__head">
+            <span class="layer__num">06</span>
+            <h3 class="layer__title">AI Product Mockup Creation</h3>
+          </header>
+
+          <ul class="gallery">
+            <li class="gallery__item shot--wide">
+              <figure class="shot">
+
+                <div class="mini-slider wm" aria-label="Project 1 screenshots">
+                  <div class="mini-slider__track">
+                    <div class="mini-slide is-active"><img src="assets/images/work/P1.jpg"
+                        alt="Customer support dashboard" loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/P2.jpg" alt="Multiple customer conversations"
+                        loading="lazy"></div>
+                    <div class="mini-slide"><img src="assets/images/work/P3.jpg" alt="Support case management, screen 3"
+                        loading="lazy"></div>
+                  </div>
+
+                  <button class="mini-arrow mini-prev" type="button" aria-label="Previous screenshot">&#10094;</button>
+                  <button class="mini-arrow mini-next" type="button" aria-label="Next screenshot">&#10095;</button>
+                  <span class="mini-count" aria-live="polite"></span>
+                </div>
+
+                <figcaption>
+                  <h4>AI Product Advertising & Lifestyle Image Generation</h4>
+                  <p>For this gig, I created AI-generated product advertisement images by transforming customer product photos into professional marketing visuals suitable for e-commerce, social media, and brand promotion.</p>
+                </figcaption>
+
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+     CONTACT
+     Low-friction: short form, plain-language steps so visitors know what
+     happens after they write.
+     ========================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+
+        <div class="contact__info">
+          <h2 id="contact-title">Tell me about your project</h2>
+          <!-- EDIT: adjust availability and reply time to match your real schedule -->
+          <p>I'm currently open to new projects. Send a few details and I'll reply, usually within one business day.</p>
+
+          <ol class="steps">
+            <li>
+              <div><strong>Tell me what you need</strong><span>Share the goal, the deadline, and any files or
+                  examples.</span></div>
+            </li>
+            <li>
+              <div><strong>Agree on the plan</strong><span>I confirm scope, timing, and how you'd like to get
+                  updates.</span></div>
+            </li>
+            <li>
+              <div><strong>Get the work, on schedule</strong><span>I deliver, keep you posted along the way, and handle
+                  revisions.</span></div>
+            </li>
+          </ol>
+
+          <!-- EDIT: your real contact details -->
+          <ul class="contact__list">
+            <li><a href="mailto:jaysonvasto@gmail.com"><svg class="icon" aria-hidden="true">
+                  <use href="#i-mail" />
+                </svg>jaysonvasto@gmail.com</a></li>
+            <li><a href="www.linkedin.com/in/jayson-basto-9abb6b148" target="_blank" rel="noopener noreferrer"><svg
+                  class="icon" aria-hidden="true">
+                  <use href="#i-link" />
+                </svg>Connect on LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT FORM
+         A static site can't send email by itself. Easiest fix (free):
+         1) Create a form at https://formspree.io  2) Copy its ID
+         3) Replace YOUR_FORM_ID below. Submissions arrive in your inbox.
+         (Netlify Forms, Getform, or Web3Forms work the same way.) -->
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form__row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form__row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form__row">
+            <label for="service">What do you need help with?</label>
+            <select id="service" name="service">
+              <option>Administrative support</option>
+              <option>Video editing</option>
+              <option>Expert witness search</option>
+              <option>Data cleaning</option>
+              <option>English or IELTS coaching</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <!-- Spam trap and email subject: leave as is -->
+          <input class="form__honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="New project inquiry from your portfolio">
+
+          <button class="btn btn--primary" type="submit">Send message</button>
+          <p class="form__note">Prefer email? Write to <a href="mailto:you@example.com">jaysonvasto@gmail.com</a>.</p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>&copy; <span id="year">2026</span> Jayson Basto. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+     SCRIPT (small, dependency-free, all optional enhancements)
+     The site still works if this fails: links, form and layout are plain HTML/CSS.
+     ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* 1. Mobile menu toggle */
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        nav.setAttribute('data-open', String(open));
+      }
+      toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+      nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+
+      /* 2. Highlight the nav link for the section currently on screen */
+      if ('IntersectionObserver' in window) {
+        var links = {};
+        nav.querySelectorAll('a[href^="#"]').forEach(function (a) { links[a.getAttribute('href')] = a; });
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            Object.keys(links).forEach(function (k) { links[k].removeAttribute('aria-current'); });
+            var active = links['#' + entry.target.id];
+            if (active) active.setAttribute('aria-current', 'true');
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        document.querySelectorAll('main section[id]').forEach(function (s) { spy.observe(s); });
+      }
+
+      /* 3. Image placeholders: if an image file is missing, keep the labeled box visible */
+      document.querySelectorAll('.ph > img').forEach(function (img) {
+        function markEmpty() { img.parentElement.classList.add('is-empty'); }
+        if (img.complete && img.naturalWidth === 0) markEmpty();
+        img.addEventListener('error', markEmpty);
+      });
+
+      /* 4. Video reels (Vimeo): thumbnail shows first, the player loads when tapped */
+      var frames = document.querySelectorAll('.reel__frame');
+      function isId(x) { return /^\d+$/.test(x || ''); }
+
+      function loadReel(frame) {
+        if (frame._ready) return;
+        frame._ready = true;
+        var id = frame.getAttribute('data-vimeo');
+        if (!isId(id)) return;
+        var hash = frame.getAttribute('data-vimeo-hash') || '';
+        var custom = frame.getAttribute('data-thumb') || '';
+        function addThumb(url, fallback) {
+          var img = document.createElement('img');
+          img.className = 'reel__thumb'; img.alt = ''; img.draggable = false; img.decoding = 'async';
+          img.onerror = function () { if (fallback && img.src !== fallback) { img.src = fallback; } else { img.remove(); } };
+          img.src = url;
+          frame.insertBefore(img, frame.firstChild);
+        }
+        if (custom) { addThumb(custom); return; }
+        var pageUrl = 'https://vimeo.com/' + id + (hash ? '/' + hash : '');
+        fetch('https://vimeo.com/api/oembed.json?width=720&url=' + encodeURIComponent(pageUrl))
+          .then(function (r) { return r.json(); })
+          .then(function (d) { if (d && d.thumbnail_url) addThumb(d.thumbnail_url.replace(/_\d+x\d+/, '_720x1280'), d.thumbnail_url); })
+          .catch(function () { });
+      }
+      function resetReel(frame) {
+        var f = frame.querySelector('iframe');
+        if (f) f.remove();
+        frame.classList.remove('is-playing');
+      }
+      function playReel(frame) {
+        var id = frame.getAttribute('data-vimeo');
+        if (!isId(id) || frame.querySelector('iframe')) return;
+        frames.forEach(function (o) { if (o !== frame) resetReel(o); });
+        var hash = frame.getAttribute('data-vimeo-hash') || '';
+        var f = document.createElement('iframe');
+        f.src = 'https://player.vimeo.com/video/' + id + '?' + (hash ? 'h=' + hash + '&' : '') + 'autoplay=1&loop=1&playsinline=1&title=0&byline=0&portrait=0&dnt=1';
+        f.title = frame.getAttribute('aria-label') || 'Video';
+        f.allow = 'autoplay; fullscreen; picture-in-picture';
+        f.setAttribute('allowfullscreen', '');
+        frame.appendChild(f);
+        frame.classList.add('is-playing');
+      }
+      if ('IntersectionObserver' in window) {
+        var lazyVideos = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { loadReel(en.target); lazyVideos.unobserve(en.target); } });
+        }, { rootMargin: '300px 0px' });
+        /* Scrolled away: stop the video (and its sound) and show the thumbnail again */
+        var offscreen = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (!en.isIntersecting) resetReel(en.target); });
+        }, { threshold: 0.2 });
+        frames.forEach(function (f) { lazyVideos.observe(f); offscreen.observe(f); });
+      } else { frames.forEach(loadReel); }
+      frames.forEach(function (frame) {
+        frame.addEventListener('click', function () { loadReel(frame); playReel(frame); });
+        frame.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadReel(frame); playReel(frame); }
+        });
+      });
+
+      /* 5. Fade-in / slide-up when sections scroll into view */
+      var revealEls = document.querySelectorAll('.section__head, .credentials > h3, .layer__head, .layer__desc, .gallery__item, .reel, .skill, .credential, .contact__info, .form, .hero__copy > *, .hero__media');
+      revealEls.forEach(function (el) {
+        el.classList.add('reveal');
+        var idx = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+        el.style.setProperty('--d', Math.min(idx % 4, 3) * 90 + 'ms');
+      });
+      if ('IntersectionObserver' in window && !reduceMotion) {
+        var revealer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); revealer.unobserve(en.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+        revealEls.forEach(function (el) { revealer.observe(el); });
+      } else { revealEls.forEach(function (el) { el.classList.add('is-in'); }); }
+
+      /* 6. Scroll progress bar + gentle parallax in the hero */
+      var progress = document.getElementById('progress');
+      var parallaxEls = document.querySelectorAll('[data-parallax]');
+      var ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () {
+          var y = window.pageYOffset;
+          var max = document.documentElement.scrollHeight - window.innerHeight;
+          if (progress && max > 0) progress.style.setProperty('--p', (y / max).toFixed(4));
+          if (!reduceMotion && y < window.innerHeight * 1.5) {
+            parallaxEls.forEach(function (el) {
+              el.style.translate = '0 ' + (y * parseFloat(el.getAttribute('data-parallax'))).toFixed(1) + 'px';
+            });
+          }
+          ticking = false;
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      /* 7. Cursor spotlight on service rows */
+      document.querySelectorAll('.skill').forEach(function (row) {
+        row.addEventListener('pointermove', function (e) {
+          var r = row.getBoundingClientRect();
+          row.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          row.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      });
+
+      /* 8. Slideshows (arrows, swipe, keyboard, counter) */
+      document.querySelectorAll('.mini-slider').forEach(function (slider) {
+        var track = slider.querySelector('.mini-slider__track');
+        var slides = Array.prototype.slice.call(slider.querySelectorAll('.mini-slide'));
+        var counter = slider.querySelector('.mini-count');
+        var index = 0, startX = 0, startY = 0;
+        if (!track || !slides.length) return;
+
+        function show(n) {
+          index = (n + slides.length) % slides.length;
+          track.style.transform = 'translateX(-' + (index * 100) + '%)';
+          slides.forEach(function (s, i) {
+            s.classList.toggle('is-active', i === index);
+            s.setAttribute('aria-hidden', String(i !== index));
+          });
+          if (counter) counter.textContent = (index + 1) + ' / ' + slides.length;
+        }
+        slider.querySelector('.mini-prev').addEventListener('click', function () { show(index - 1); });
+        slider.querySelector('.mini-next').addEventListener('click', function () { show(index + 1); });
+        slider.setAttribute('tabindex', '0');
+        slider.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') show(index - 1);
+          if (e.key === 'ArrowRight') show(index + 1);
+        });
+        track.addEventListener('touchstart', function (e) {
+          if (e.touches.length !== 1) return;
+          startX = e.touches[0].clientX; startY = e.touches[0].clientY;
+        }, { passive: true });
+        track.addEventListener('touchend', function (e) {
+          var t = e.changedTouches[0], dx = t.clientX - startX, dy = t.clientY - startY;
+          if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.2) show(index + (dx < 0 ? 1 : -1));
+        }, { passive: true });
+        show(0);
+      });
+
+      /* 9. Light image protection: blocks right-click and drag on images and videos only,
+            so copy/paste, keyboard shortcuts and printing keep working normally.
+            (No website can fully stop screenshots; the watermark is the stronger deterrent.) */
+      document.addEventListener('contextmenu', function (e) { if (e.target.closest && e.target.closest('img, .reel__frame, .mini-slider')) e.preventDefault(); });
+      document.addEventListener('dragstart', function (e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
+
+      /* 10. Footer year */
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+
+</body>
+
+</html>
